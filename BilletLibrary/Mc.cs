@@ -4,13 +4,13 @@ using System.Text;
 
 namespace BilletLibrary
 {
-    public class Mc
+    public class Mc : Køretøj
     {
-        public string Nummerplade { get; set; }
+        public override string NummerPlade { get; set; }
 
-        public DateTime Date { get; set; }
+        public override DateTime Dato { get; set; }
 
-        public decimal Pris()
+        public override decimal Pris()
         {
             return 125;
         }
