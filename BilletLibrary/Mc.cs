@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BilletLibrary
 {
-    class Mc
+    public class Mc
     {
         public string Nummerplade { get; set; }
 
