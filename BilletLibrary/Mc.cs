@@ -1,22 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace BilletLibrary
 {
-    public class Bil
+    class Mc
     {
         public string Nummerplade { get; set; }
 
-        public DateTime Dato { get; set; }
-
+        public DateTime Date { get; set; }
 
         public decimal Pris()
         {
-            return 240;
+            return 125;
         }
 
         public string Køretøj()
         {
-            return "Bil";
+            return "MC";
         }
     }
 }
