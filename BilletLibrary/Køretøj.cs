@@ -27,6 +27,16 @@ namespace BilletLibrary
         {
             return 240;
         }
+        /// <summary>
+        /// Method returner prisen med rabat,
+        /// </summary>
+        /// <returns></returns>
+        public virtual decimal BrobizzPris()
+        {
+            decimal rabat = 0.95m; 
+            decimal nypris = Pris() * rabat;
+            return nypris;
+        }
 
         /// <summary>
         /// Method, NummerPladeLæser, registare nummerpladen og sikker at den ikke er længer end 7. 

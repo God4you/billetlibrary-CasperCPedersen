@@ -56,5 +56,16 @@ namespace UnitTestProject
             //Assort
             Assert.AreEqual("Fejl Nummerlade for lang", Svar);
         }
+
+        [TestMethod]
+        public void BilPrisMedBrobizz()
+        {
+            //Arange
+            var bil = new Bil();
+            //Act
+            decimal pris = bil.BrobizzPris();
+            //Assort
+            Assert.AreEqual(228, pris);
+        }
     }
 }

@@ -23,7 +23,18 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void BilKøretøj()
+        public void MCPrisMedBrobizz()
+        {
+            //Arange
+            var MC = new Mc();
+            //Act
+            decimal pris = MC.BrobizzPris();
+            //Assort
+            Assert.AreEqual(118.75m, pris);
+        }
+
+        [TestMethod]
+        public void MCKøretøj()
         {
             //Arange
             var MC = new Mc();
