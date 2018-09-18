@@ -4,6 +4,7 @@ namespace BilletLibrary
 {
     public class Bil : Køretøj
     {
+
         public override string NummerPlade { get; set; }
 
         public override DateTime Dato { get; set; }

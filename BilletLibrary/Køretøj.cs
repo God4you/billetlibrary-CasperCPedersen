@@ -15,7 +15,7 @@ namespace BilletLibrary
         public abstract string NummerPlade { get; set; }
 
         /// <summary>
-        /// Dato "DateTime" visser hvornår køretøjet kom forbi
+        /// Dato "DateTime" viser hvornår køretøjet kom forbi
         /// </summary>
         public abstract DateTime Dato { get; set; }
 
@@ -47,7 +47,7 @@ namespace BilletLibrary
         {
             if (input.Length > 7)
             {
-                return "Fejl Nummerlade for lang";
+                return "Fejl: Nummerlade for lang";
             }
             NummerPlade = input;
             return "Nummerplade er godtaget";

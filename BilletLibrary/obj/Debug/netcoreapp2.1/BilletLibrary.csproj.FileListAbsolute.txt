@@ -7,3 +7,4 @@ C:\source\billetSysterm\billetlibrary-CasperCPedersen\BilletLibrary\obj\Debug\ne
 C:\source\billetSysterm\billetlibrary-CasperCPedersen\BilletLibrary\obj\Debug\netcoreapp2.1\BilletLibrary.AssemblyInfo.cs
 C:\source\billetSysterm\billetlibrary-CasperCPedersen\BilletLibrary\obj\Debug\netcoreapp2.1\BilletLibrary.dll
 C:\source\billetSysterm\billetlibrary-CasperCPedersen\BilletLibrary\obj\Debug\netcoreapp2.1\BilletLibrary.pdb
+C:\source\billetSysterm\billetlibrary-CasperCPedersen\BilletLibrary\bin\Debug\netcoreapp2.1\BilletLibrary.xml

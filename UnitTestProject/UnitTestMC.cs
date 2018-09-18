@@ -65,7 +65,7 @@ namespace UnitTestProject
             //Act
             string Svar = MC.NummerPladeLæser(TestPlade);
             //Assort
-            Assert.AreEqual("Fejl Nummerlade for lang", Svar);
+            Assert.AreEqual("Fejl: Nummerlade for lang", Svar);
         }
     }
 }

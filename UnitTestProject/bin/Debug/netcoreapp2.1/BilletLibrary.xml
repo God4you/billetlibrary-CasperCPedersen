@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilletLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:BilletLibrary.Køretøj">
+            <summary>
+            Abstract Class Køretøj indholder alt info ens for alle Køretøjer i danmark
+            </summary>
+        </member>
+        <member name="P:BilletLibrary.Køretøj.NummerPlade">
+            <summary>
+            NummerPlade "String"
+            </summary>
+        </member>
+        <member name="P:BilletLibrary.Køretøj.Dato">
+            <summary>
+            Dato "DateTime" viser hvornår køretøjet kom forbi
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.Pris">
+            <summary>
+            Method returner Prisen, køretøjet skal betale i Dkk
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.BrobizzPris">
+            <summary>
+            Method returner prisen med rabat,
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.NummerPladeLæser(System.String)">
+            <summary>
+            Method, NummerPladeLæser, registare nummerpladen og sikker at den ikke er længer end 7. 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

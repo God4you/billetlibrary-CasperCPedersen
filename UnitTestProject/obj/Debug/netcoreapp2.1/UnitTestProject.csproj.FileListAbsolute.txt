@@ -15,3 +15,4 @@ C:\source\billetSysterm\billetlibrary-CasperCPedersen\UnitTestProject\bin\Debug\
 C:\source\billetSysterm\billetlibrary-CasperCPedersen\UnitTestProject\obj\Debug\netcoreapp2.1\UnitTestProject.csproj.CopyComplete
 C:\source\billetSysterm\billetlibrary-CasperCPedersen\UnitTestProject\obj\Debug\netcoreapp2.1\UnitTestProject.dll
 C:\source\billetSysterm\billetlibrary-CasperCPedersen\UnitTestProject\obj\Debug\netcoreapp2.1\UnitTestProject.pdb
+C:\source\billetSysterm\billetlibrary-CasperCPedersen\UnitTestProject\bin\Debug\netcoreapp2.1\BilletLibrary.xml
