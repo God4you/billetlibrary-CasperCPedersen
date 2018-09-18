@@ -19,9 +19,28 @@ namespace BilletLibrary
         /// </summary>
         public abstract DateTime Dato { get; set; }
 
+        /// <summary>
+        /// Method returner Prisen, køretøjet skal betale i Dkk
+        /// </summary>
+        /// <returns></returns>
         public virtual decimal Pris()
         {
             return 240;
+        }
+
+        /// <summary>
+        /// Method, NummerPladeLæser, registare nummerpladen og sikker at den ikke er længer end 7. 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public virtual string NummerPladeLæser(string input)
+        {
+            if (input.Length > 7)
+            {
+                return "Fejl Nummerlade for lang";
+            }
+            NummerPlade = input;
+            return "Nummerplade er godtaget";
         }
 
     }

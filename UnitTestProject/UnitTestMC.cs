@@ -32,5 +32,29 @@ namespace UnitTestProject
             //Assort
             Assert.AreEqual("MC", køretøj);
         }
+
+        [TestMethod]
+        public void MCNummerPladeSyvEllerMinder()
+        {
+            //Arange
+            var MC = new Mc();
+            string TestPlade = "DF55200";
+            //Act
+            string Svar = MC.NummerPladeLæser(TestPlade);
+            //Assort
+            Assert.AreEqual("Nummerplade er godtaget", Svar);
+        }
+
+        [TestMethod]
+        public void MCNummerPladeMereEndSyv()
+        {
+            //Arange
+            var MC = new Mc();
+            string TestPlade = "DF552001";
+            //Act
+            string Svar = MC.NummerPladeLæser(TestPlade);
+            //Assort
+            Assert.AreEqual("Fejl Nummerlade for lang", Svar);
+        }
     }
 }
