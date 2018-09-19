@@ -10,7 +10,7 @@ namespace BilletLibrary
         private string _nummerplade;
 
         /// <summary>
-        /// NummerPlade "String"
+        /// NummerPlade "String kan ikke blive sat til en string længer end 7 tengn"
         /// </summary>
         public virtual string NummerPlade
         {
@@ -30,9 +30,9 @@ namespace BilletLibrary
 
 
         /// <summary>
-        /// Dato "DateTime" viser hvornår køretøjet kom forbi
+        /// Dato "DateTime" kan bruges til at gemme, hvornår køretøjet. Kom forbi.
         /// </summary>
-        public abstract DateTime Dato { get; set; }
+        public virtual DateTime Dato { get; set; }
 
         /// <summary>
         /// Method returner Prisen, køretøjet skal betale i Dkk
@@ -43,7 +43,7 @@ namespace BilletLibrary
             return 240;
         }
         /// <summary>
-        /// Method returner prisen med rabat,
+        /// Method returner prisen med Brobizz rabat,
         /// </summary>
         /// <returns></returns>
         public virtual decimal BrobizzPris()

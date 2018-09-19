@@ -2,16 +2,23 @@
 
 namespace BilletLibrary
 {
+    /// <summary>
+    /// public Bil class.
+    /// </summary>
     public class Bil : KøretøjStandart
     {
-
-        public override DateTime Dato { get; set; }
-
+        /// <summary>
+        /// override pris()
+        /// </summary>
+        /// <returns></returns>
         public override decimal Pris()
         {
             return 240;
         }
-
+        /// <summary>
+        /// override køretøj()
+        /// </summary>
+        /// <returns></returns>
         public override string Køretøj()
         {
             return "Bil";

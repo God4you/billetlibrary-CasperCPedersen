@@ -4,6 +4,23 @@
         <name>BilletLibrary</name>
     </assembly>
     <members>
+        <member name="T:BilletLibrary.Bil">
+            <summary>
+            public Bil class.
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Bil.Pris">
+            <summary>
+            override pris()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.Bil.Køretøj">
+            <summary>
+            override køretøj()
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BilletLibrary.KøretøjStandart">
             <summary>
             Abstract Class Køretøj indholder alt info ens for alle Køretøjer i danmark
@@ -11,12 +28,12 @@
         </member>
         <member name="P:BilletLibrary.KøretøjStandart.NummerPlade">
             <summary>
-            NummerPlade "String"
+            NummerPlade "String kan ikke blive sat til en string længer end 7 tengn"
             </summary>
         </member>
         <member name="P:BilletLibrary.KøretøjStandart.Dato">
             <summary>
-            Dato "DateTime" viser hvornår køretøjet kom forbi
+            Dato "DateTime" kan bruges til at gemme, hvornår køretøjet. Kom forbi.
             </summary>
         </member>
         <member name="M:BilletLibrary.KøretøjStandart.Pris">
@@ -27,7 +44,24 @@
         </member>
         <member name="M:BilletLibrary.KøretøjStandart.BrobizzPris">
             <summary>
-            Method returner prisen med rabat,
+            Method returner prisen med Brobizz rabat,
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BilletLibrary.Mc">
+            <summary>
+            MC public class
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Mc.Pris">
+            <summary>
+            Override decimal Pris()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.Mc.Køretøj">
+            <summary>
+            Override string Køretøj()
             </summary>
             <returns></returns>
         </member>
