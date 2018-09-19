@@ -1,18 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BilletLibrary
 {
     /// <summary>
     /// Abstract Class Køretøj indholder alt info ens for alle Køretøjer i danmark
     /// </summary>
-    public abstract class Køretøj
+    public abstract class KøretøjStandart
     {
+        private string _nummerplade;
+
         /// <summary>
         /// NummerPlade "String"
         /// </summary>
-        public abstract string NummerPlade { get; set; }
+        public virtual string NummerPlade
+        {
+            get { return _nummerplade; }
+            set
+            {
+                if (value.Length < 8)
+                {
+                    _nummerplade = value;
+                }
+                else
+                {
+                    throw new ArgumentException("for lang");
+                }
+            }
+        }
+
 
         /// <summary>
         /// Dato "DateTime" viser hvornår køretøjet kom forbi
@@ -38,19 +53,10 @@ namespace BilletLibrary
             return nypris;
         }
 
-        /// <summary>
-        /// Method, NummerPladeLæser, registare nummerpladen og sikker at den ikke er længer end 7. 
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        public virtual string NummerPladeLæser(string input)
+
+        public virtual string Køretøj()
         {
-            if (input.Length > 7)
-            {
-                return "Fejl: Nummerlade for lang";
-            }
-            NummerPlade = input;
-            return "Nummerplade er godtaget";
+            return "Køretøj";
         }
 
     }

@@ -2,10 +2,8 @@
 
 namespace BilletLibrary
 {
-    public class Bil : Køretøj
+    public class Bil : KøretøjStandart
     {
-
-        public override string NummerPlade { get; set; }
 
         public override DateTime Dato { get; set; }
 
@@ -14,7 +12,7 @@ namespace BilletLibrary
             return 240;
         }
 
-        public string Køretøj()
+        public override string Køretøj()
         {
             return "Bil";
         }

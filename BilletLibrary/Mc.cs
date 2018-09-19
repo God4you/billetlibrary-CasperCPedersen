@@ -4,9 +4,8 @@ using System.Text;
 
 namespace BilletLibrary
 {
-    public class Mc : Køretøj
+    public class Mc : KøretøjStandart
     {
-        public override string NummerPlade { get; set; }
 
         public override DateTime Dato { get; set; }
 
@@ -15,7 +14,7 @@ namespace BilletLibrary
             return 125;
         }
 
-        public string Køretøj()
+        public override string Køretøj()
         {
             return "MC";
         }

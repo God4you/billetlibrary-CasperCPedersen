@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,7 +38,7 @@ namespace UnitTestProject
             var bil = new Bil();
             //Act
             decimal pris = bil.BrobizzPris();
-            //Assort
+            //Assert
             Assert.AreEqual(228, pris);
         }
         /// <summary>
@@ -50,7 +51,7 @@ namespace UnitTestProject
             var bil = new Bil();
             //Act
             string køretøj = bil.Køretøj();
-            //Assort
+            //Assert
             Assert.AreEqual("Bil",køretøj);
         }
         /// <summary>
@@ -63,23 +64,26 @@ namespace UnitTestProject
             var bil = new Bil();
             string TestPlade = "DF55200";
             //Act
-            string Svar = bil.NummerPladeLæser(TestPlade);
-            //Assort
-            Assert.AreEqual("Nummerplade er godtaget",Svar);
+            bil.NummerPlade = TestPlade;
+            //Assert
+            Assert.AreEqual(bil.NummerPlade,TestPlade);
         }
         /// <summary>
         /// Tester Bil.NummerPaldeLæser() method. ikke accpeter nummerplade mere end 7 tengn
         /// </summary>
-        [TestMethod]
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
         public void BilNummerPladeMereEndSyv()
         {
             //Arange
             var bil = new Bil();
-            string TestPlade = "DF552001";
+
             //Act
-            string Svar = bil.NummerPladeLæser(TestPlade);
-            //Assort
-            Assert.AreEqual("Fejl: Nummerlade for lang", Svar);
+            string TestPlade = "DF552001999";
+
+            bil.NummerPlade = TestPlade;
+            //Assert
+            Assert.Fail();
         }
 
     }

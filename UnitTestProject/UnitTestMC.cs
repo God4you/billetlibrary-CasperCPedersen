@@ -18,7 +18,7 @@ namespace UnitTestProject
             var MC = new Mc();
             //Act
             decimal pris = MC.Pris();
-            //Assort
+            //Assert
             Assert.AreEqual(125, pris);
         }
 
@@ -29,7 +29,7 @@ namespace UnitTestProject
             var MC = new Mc();
             //Act
             decimal pris = MC.BrobizzPris();
-            //Assort
+            //Assert
             Assert.AreEqual(118.75m, pris);
         }
 
@@ -40,7 +40,7 @@ namespace UnitTestProject
             var MC = new Mc();
             //Act
             string køretøj = MC.Køretøj();
-            //Assort
+            //Assert
             Assert.AreEqual("MC", køretøj);
         }
 
@@ -51,21 +51,22 @@ namespace UnitTestProject
             var MC = new Mc();
             string TestPlade = "DF55200";
             //Act
-            string Svar = MC.NummerPladeLæser(TestPlade);
-            //Assort
-            Assert.AreEqual("Nummerplade er godtaget", Svar);
+            MC.NummerPlade = TestPlade;
+            //Assert
+            Assert.AreEqual(MC.NummerPlade,TestPlade);
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
         public void MCNummerPladeMereEndSyv()
         {
             //Arange
             var MC = new Mc();
             string TestPlade = "DF552001";
             //Act
-            string Svar = MC.NummerPladeLæser(TestPlade);
-            //Assort
-            Assert.AreEqual("Fejl: Nummerlade for lang", Svar);
+            MC.NummerPlade = TestPlade;
+            //Assert
+            Assert.Fail();
         }
     }
 }
