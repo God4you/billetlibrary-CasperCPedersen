@@ -9,6 +9,7 @@ namespace BilletLibrary
     {
         /// <summary>
         /// override pris()
+        /// Med fast pris 240kr
         /// </summary>
         /// <returns></returns>
         public override decimal Pris()
@@ -17,6 +18,7 @@ namespace BilletLibrary
         }
         /// <summary>
         /// override køretøj()
+        /// returner "Bil"
         /// </summary>
         /// <returns></returns>
         public override string Køretøj()

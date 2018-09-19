@@ -5723,23 +5723,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nedzad\\.nuget\\packages\\": {},
+    "C:\\Users\\afg_k\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\source\\billetSysterm\\billetlibrary-CasperCPedersen\\UnitTestProject\\UnitTestProject.csproj",
+      "projectUniqueName": "C:\\Users\\afg_k\\source\\Casper\\billetlibrary-CasperCPedersen\\UnitTestProject\\UnitTestProject.csproj",
       "projectName": "UnitTestProject",
-      "projectPath": "C:\\source\\billetSysterm\\billetlibrary-CasperCPedersen\\UnitTestProject\\UnitTestProject.csproj",
-      "packagesPath": "C:\\Users\\Nedzad\\.nuget\\packages\\",
-      "outputPath": "C:\\source\\billetSysterm\\billetlibrary-CasperCPedersen\\UnitTestProject\\obj\\",
+      "projectPath": "C:\\Users\\afg_k\\source\\Casper\\billetlibrary-CasperCPedersen\\UnitTestProject\\UnitTestProject.csproj",
+      "packagesPath": "C:\\Users\\afg_k\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\afg_k\\source\\Casper\\billetlibrary-CasperCPedersen\\UnitTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nedzad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\afg_k\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5776,6 +5776,7 @@
             "version": "[15.8.0, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
