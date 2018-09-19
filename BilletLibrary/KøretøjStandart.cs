@@ -53,7 +53,10 @@ namespace BilletLibrary
             return nypris;
         }
 
-
+        /// <summary>
+        /// Method returner Køretøj "Type".
+        /// </summary>
+        /// <returns></returns>
         public virtual string Køretøj()
         {
             return "Køretøj";

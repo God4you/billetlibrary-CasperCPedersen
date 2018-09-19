@@ -48,6 +48,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:BilletLibrary.KøretøjStandart.Køretøj">
+            <summary>
+            Method returner Køretøj "Type".
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BilletLibrary.Mc">
             <summary>
             MC public class
